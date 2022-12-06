@@ -1,0 +1,21 @@
+## BUILD IMAGE
+docker built -t image_name .
+
+## BUILD CONTAINER
+docker run --name container_name -p PORT:PORT -d image_name
+
+## DOCKER S&S
+docker start container_name
+docker stop container_name
+
+
+## SHOW ALL IMAGES
+docker ps -a
+
+
+## DELETE C&I
+docker container rm container_name
+docker image rm image_name 
+
+## DELETE ALL I&C
+docker system prune -a
